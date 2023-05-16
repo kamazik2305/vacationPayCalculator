@@ -22,7 +22,7 @@ public class VacationController {
     public ResponseEntity<String> getVacationPay(@RequestBody @Valid VacationDto vacationDto)
     {
         return ResponseEntity.ok("Сумма отпускных: "
-                + vacationService.calculateVacationPay(vacationDto));
+                + vacationService.calculateVacationPay(vacationDto) + " рублей");
     }
 
 
